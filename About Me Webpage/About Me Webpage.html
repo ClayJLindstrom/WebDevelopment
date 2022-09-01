@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<!-- !DOCTYPE html tells browser this is using HTML5 -->
+<!-- EXAMPLE CODE HEADER/DISCLAIMER
+ 
+Project:  Project1-About Me
+Name: Clay Lindstrom
+Submitted: 8/31/22
+ 
+I declare that the following source code was written by me, or provided
+by the instructor for this project. I understand that copying source
+code from any other source, providing source code to another student, 
+or leaving my code on a public web site constitutes cheating.
+I acknowledge that  If I am found in violation of this policy this may result
+in a zero grade, a permanent record on file and possibly immediate failure of the class.
+ 
+Reflection (1-2 paragraphs):  I was able to complete the project, but the organization of the code seemed frustrating to me.
+perhaps it was because of all of my pseudo code, but when coding the table, the code felt like
+too much effort for too little detail. It was a pain.
+	You were right when you said that this project had a lot of "little parts" to it, professor. The little parts 
+almost drove me crazy. I'm glad the assignment is over, though.
+ 
+-->
+<html>
+<!-- Project 1/2 Layout Starter Page -->
+<!-- WARNING-Please do not copy/paste any of this code.  You may utilize the concepts here 
+but I don't want to see a bunch of assignments with the exact layout, class names etc.  
+Type every line of code yourself!  Change the names, be creative, make the assignment your own!
+
+TRICK:  select all text in this file, 'Ctrl-A', then use 'Alt-Shift-f' to format your document with proper indents etc.
+-->
+
+
+<!--In the <head> element, set the title, which appears on the browser’s title bar. 
+The title should read: About <your-name>-->
+<head>
+	<title>About Clay Lindstrom</title>
+	<style>
+		<!-- CSS Test: stuff inside the file.-->
+		h1 {color:blue; font-size:24px;}
+	</style>
+<!--Put your name in a header, level 1.-->
+	<h1>Clay Lindstrom</h1>
+<!--Put a recognizable picture of you using an <img> tag.
+Please use a paint program to resize and crop your image so that it is no larger than 500 by 500px (It does not have to be square).
+If the image looks squashed or stretched I’m going to take off points.
+The image should live in the same folder as your HTML page
+(2 points) can you make your photo right-aligned on the page, and make the page’s text flow around it?-->
+	<img src="claylindstrom.jpg" alt= "One Handsome Man" align="right">
+</head>
+
+
+<!--Your personal info-->
+<!--(2 points) can you change the font used in the body of the document to something besides Times New Roman (or whatever your browser uses by default)?-->
+<body style="font-family:arial">
+	<!--Have a header (level 2) that says: “Personal Info:”-->
+	<h2>Personal Info:</h2>
+	<!--Next, use an unordered list (bullet points) and give me the following pieces of info:-->
+	<ul>
+		<!--Your major (spell it out. Don’t abbreviate).-->
+		<li> <b>Current Major:</b> Computer Science</li>
+		<!--Your high school, and the year you graduated.-->
+		<li> <b>High School:</b> Lone Peak</li>
+		<!--What year are you in, currently, at UVU.-->
+		<li> <b>Current Year:</b> Sophomore</li>
+		<!--Your favorite flavor of ice cream (mmmm, ice cream).-->
+		<li> <b>Favorite Ice Cream Flavor:</b> Huckleberry</li>
+	</ul>
+	<!--Make use bold text for each label like in the example that I provided below.-->
+
+
+<!--Enter your Five favorite books
+
+	Have a level-2 header titled “My five favorite books”-->
+	<h2>My five favorite books</h2>
+	<!--Choose five books that you like the best, and list them in the order of your preference.-->
+	<ol>
+		<!--Each title should be italicized. Each author’s name should be in regular text.-->
+		<!--Add hyperlinks. For each of the five books you listed, make the author’s name a hyperlink to the author’s website.-->
+		<li><i>Book of Mormon</i>, <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm?lang=eng">Prophets from Ancient America</a></li> 
+		<li><i>The Knife of Never Letting Go</i>, <a href="https://patrickness.com/">Patrick Ness</a></li> 
+		<li><i>Percy Jackson: The Titan's Curse</i>, <a href="https://rickriordan.com/">Rick Riordan</a></li> 
+		<li><i>Avatar, the Last Airbender: The Search</i>, <a href="https://geneyang.com/">Gene Luen Yang</a></li> 
+		<li><i>Calvin and Hobbes</i>, <a href="https://en.wikipedia.org/wiki/Bill_Watterson">Bill Watterson</a></li> 
+	</ol>
+
+
+<!--Compose a haiku or a limerick, or other short poem (3 or 4 lines).  Please keep your poem PG-rated (no potty humor, no sexually suggestive stuff).
+
+(2 points) find a way to indent your poem, or center it on the page.
+Have a level-2 header with a title of your poem-->
+	<h2 style="text-align:center;">Welcome to the Game</h2>
+<!--Have a sentence or two explaining your inspiration for the poem.-->
+	<p style="text-align:center;">A haiku to a dear card-shark friend of mine.</p>
+<!--Put your poem after the header.
+Each line should use line-breaks, not paragraph breaks.-->
+	<p style="text-align:center;"><i>My dear friend of fame,<br>Would you like to play a game?<br>You'll laugh all the same.</i></p>
+
+
+<!--Brief Essay
+
+Make a level-2 header titled something like: “My personal interests”-->
+	<h2>My Interests:</h2>
+	<!--Give me three paragraphs, with three or more sentences each. In each paragraph talk about something you’re interested in.-->
+	<p><b>Video Game Design: </b>I am someone who strives to become a Game Designer! I've always been fascinated by design, but when I learned that I could make and design videogames, I was hooked! I've now made two games with the help of some friends, and I plan to make more in the future.</p>
+	<p><b>Drawing and Animation: </b>Though I don't want to have a career in animation, I still have a great love for drawing. I made my own art for my games for a while (and they're pretty good, if I can say so myself). I also have a lot of respect for people who work on such art projects.</p>
+	<p><b>The Temple: </b>I'm pretty active in my church, the Church of Jesus Christ of Latter-Day Saints, and I love it. Though my favorite place in the church is the Temple, such as the Mt. Timpanogos Utah Temple. There's a feeling of peace there that one doesn't feel anywhere else.</p>
+
+
+<!--For the Class Schedule I want you to create a table that shows your weekly class schedule. This is easy to do using table elements, but it does require some attention to detail. 
+
+Make a level-2 header titled “class schedule”.-->
+	<h2>Class Schedule</h2>
+	<!--Create a table with 6 columns.
+	Set the border size to 1, so I can see the borders for each cell. Set the cell spacing to 3, and set the cell padding to 3.-->
+	<table border="1", cellspacing="3", cellpadding="3" style="table-layout:fixed; width:100%;">
+<!--The header row should have a blank cell, followed by cells for Monday, Tuesday, Wednesday, Thursday, and Friday. If you have a Saturday class (you poor soul), you can add a sixth column (or not, I don’t care, really).-->
+		<tr>
+			<td></td>
+			<td>Monday</td>
+			<td>Tuesday</td>
+			<td>Wednesday</td>
+			<td>Thursday</td>
+			<td>Friday</td>
+		</tr>
+<!--Going down the left side of the table, I want you to list out the hours of your week-day in 30-minute increments. You can start as early as you feel necessary.
+List the classes you have as cells. Use the row-span element to block out as many 30-minute cells as you need for each item.  If you have stuff that starts at an odd time, then guess.  I won’t care, as long as it doesn’t look all wonky.
+Fill up your schedule. Make stuff up if you have to.  I want to see at least four classes that run M-W-F or Tu-Th or every weekday.  In addition to classes, You can put your employment, your work-out time, your commute time, or anything else you like.
+Use the rowspan attribute, so if you have an hour-long class, the cell should take up two rows, without a line between them.
+(2 points) on your weekly schedule, can you fill in in each block so that each thing is color-coded in its own color (English is yellow, calculus is light red, work is light blue, etc)?
+(2 points) equal column widths. On your schedule, can you find a way to have the column widths fixed so that they’re all the same size-->
+		<tr>
+			<td>8:00am</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td rowspan="4" style="background-color:#FF0000; text-align:center;">Geo 1015</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>8:30am</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>9:00am</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>9:30am</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>10:00am</td>
+			<td></td>
+			<td rowspan="3" style="background-color:orange; text-align:center;">CS 2550</td>
+			<td></td>
+			<td rowspan="3" style="background-color:orange; text-align:center;">CS 2550</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>10:30am</td>
+			<td rowspan = "12" style="background-color:#00000F; color:white; text-align:center">Work</td>
+			<td></td>
+			<td rowspan = "12" style="background-color:#00000F; color:white; text-align:center">Work</td>
+		</tr>
+		<tr>
+			<td>11:00am</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>11:30am</td>
+			<td rowspan="3" style="background-color:#FFFF00; text-align:center">CS 2300</td>
+			<td></td>
+			<td rowspan="3" style="background-color:#FFFF00; text-align:center">CS 2300</td>
+		</tr>
+		<tr>
+			<td>12:00pm</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>12:30pm</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>1:00pm</td>
+			<td rowspan="3" style="background-color:#00FF00; text-align:center;">CS 2420</td>
+			<td></td>
+			<td rowspan="3" style="background-color:#00FF00; text-align:center;">CS 2420</td>
+		</tr>
+		<tr>
+			<td>1:30pm</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>2:00pm</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>2:30pm</td>
+			<td rowspan="3" style="background-color:#0000FF; text-align:center;">CS 2810</td>
+			<td></td>
+			<td rowspan="3" style="background-color:#0000FF; text-align:center;">CS 2810</td>
+		</tr>
+		<tr>
+			<td>3:00pm</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>3:30pm</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>4:00pm</td>
+			<td style="background-color:#FF00FF; text-align:center;">Work Out</td>
+			<td></td>
+			<td style="background-color:#FF00FF; text-align:center;">Work Out</td>
+		</tr>
+		<tr>
+			<td>4:30pm</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>5:00pm</td>
+			<td></td>
+			<td rowspan = "15" style="background-color:#00000F; color:white; text-align:center">Work</td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>5:30pm</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>6:00pm</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>6:30pm</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>7:00pm</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>7:30pm</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>8:00pm</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>8:30pm</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>9:00pm</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+
+
+<!--EXTRA ITEMS (5 Required, 10 pts max)
+Do any five of the following things.  You will need to find this stuff out for yourself:
+
+(2 points) Can you set a repeating background image? The text should still be readable.  Pick something that doesn’t make my eyes bleed, or I won’t give you credit.
+-<CHECK>(2 points) can you change the font used in the body of the document to something besides Times New Roman (or whatever your browser uses by default)?
+-<(2 points) can you make your photo right-aligned on the page, and make the page’s text flow around it?
+(2 points) on all hyperlinks, can you make it so that the underline only appears when you mouse-over the link?
+-<CHECK>(2 points) find a way to indent your poem, or center it on the page.
+Weekly Schedule
+(2 points) text alignment. On your schedule, can you find a way to have all the text vertically aligned to the top and horizontally aligned to the left (including the headers).
+-<(2 points) on your weekly schedule, can you fill in in each block so that each thing is color-coded in its own color (English is yellow, calculus is light red, work is light blue, etc)?
+-<(2 points) equal column widths. On your schedule, can you find a way to have the column widths fixed so that they’re all the same size-->
+</body>
+
+<!--Now check the assignment again to make sure my class schedule fits the criteria, and that I didn't miss anything.-->
+</html>
